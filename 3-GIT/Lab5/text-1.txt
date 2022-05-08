@@ -2,6 +2,6 @@ Conflict
 
 Line 3
 
-Line 5
+Line 5*****Make conflict
 
 Line 6****Make conflict
