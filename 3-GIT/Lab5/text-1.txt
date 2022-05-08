@@ -1,7 +1,4 @@
-Conflict
-
-*****Make conflict
-
-*****Make conflict
-
-Line 6****Make conflict
+conflict
+line 1
+line 2
+line 3
