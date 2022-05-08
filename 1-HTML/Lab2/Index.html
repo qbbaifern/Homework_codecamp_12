@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lab2</title>
+</head>
+
+<body>
+    <!--1. ค้นหาข้อมูลว่าแท็ก <!doctype> มีหน้าที่อะไร? (5 นาที)-->
+    <h3>What is &lt;!DOCTYPE&gt; ?</h3>
+    <p><ins>Definition</ins>: The declaration is not an HTML tag. It is an "information" to the browser about what
+        document type to expect.</p>
+    <p><ins>Usage</ins>:
+    <ul>
+        <li>All HTML documents must start with a <mark>&lt;!DOCTYPE&gt;</mark> declaration.<br>
+            <em>Example in HTML 5:</em><br>
+            &lt;!DOCTYPE html&gt;
+        </li>
+        <li><b>Note:</b> The <mark>&lt;!DOCTYPE&gt;</mark> declaration is NOT case sensitive.</li>
+    </ul>
+    </p>
+    <hr>
+
+    <!--2. ถ้าอยากให้มี tooltip ใน tag นั้นต้องใช้ attribute ใด? (3นาที)
+     *tooltip คือข้อความเล็กๆ ที่แสดงเมื่อเลื่อน mouse ไปวางบนบริเวณที่ระบุ-->
+    <h3>Tooltip shows up when mouse over by <em>title</em> attribute</h3>
+    <p><ins>Definition</ins>:
+        The title attribute specifies extra information about an element.<br>
+        The information is most often shown as a tooltip text when the mouse moves over the element.<br>
+    </p>
+    <p><ins>Syntax</ins>:<br>
+        <em>&lt;element title="text"&gt;</em>
+    </p>
+    <p><ins>Example:</ins><br>
+        <span title="This is tool tip">Mouse over here, tooltip will be shown up!</span>
+    </p>
+    <hr>
+
+    <!-- 3. แท็ก <b>, <i> ต่างจาก <strong>, <em> หรือไม่ อย่างไร? (5 นาที)-->
+    <h3>&lt;b&gt; and &lt;i&gt; VS &lt;strong&gt; and &lt;em&gt; </h3>
+    <p>They have <b>the same effect on normal web browser</b> rendering engines, but there is a <b>fundamental
+            difference</b> between them.</p>
+    <p>
+    <ul>
+        <li>&lt;b&gt; and &lt;i&gt; are <strong>explicit </strong>- they specify bold and italic respectively.</li>
+        <li>&lt;strong&gt; and &lt;em&gt; are <strong>semantic</strong> - they specify that the enclosed text should be
+            "strong" or "emphasised" in some way, usually bold and italic, but allow for the actual styling to be
+            controlled via CSS. Hence these are preferred in modern web pages.</li>
+    </ul>
+    </p>
+    <hr>
+
+    <!-- 4. หา tag ที่สามารถแสดงข้อความกลับหลังได้
+    เช่น โปรแกรมเมอร์ แสดงเป็น ร์อมเมรกแรปโ-->
+    <h3>&lt;bdo&gt; tag to specify the text direction</h3>
+    <p><ins>Definition</ins>: BDO stands for Bi-Directional Override. <br>
+    The &lt;bdo&gt; tag is used to override the current text direction.</p>
+    <p><ins>Syntax</ins>: <br>
+        <ul>
+            <li><b>Text left to right</b><br>
+                &lt;bdo dir="ltr"&gt; โปรแกรมเมอร์ &lt;/bdo&gt; <br> Result =&gt; <bdo dir="ltr">โปรแกรมเมอร์ </bdo> 
+            </li>
+            <li><b>Text right to left</b> <br>
+                &lt;bdo dir="rtl"&gt; โปรแกรมเมอร์ &lt;/bdo&gt; <br> Result =&gt; <bdo dir="rtl">โปรแกรมเมอร์ </bdo> 
+            </li>
+        </ul>
+        </p>
+    <hr>
+
+    <footer>
+        <h5>Reference</h5>
+        <a href="https://www.w3schools.com/html/">https://www.w3schools.com/html/</a><br>
+        <a
+            href="https://stackoverflow.com/questions/271743/whats-the-difference-between-b-and-strong-i-and-em">https://stackoverflow.com/questions/271743/whats-the-difference-between-b-and-strong-i-and-em</a>
+    </footer>
+</body>
+
+</html>
