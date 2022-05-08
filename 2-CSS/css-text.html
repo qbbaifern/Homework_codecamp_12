@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text css</title>
+    <style>
+        h1 {
+            background-color: navajowhite;
+            width: 80%;
+            text-align: center;
+            margin: auto;
+            letter-spacing: 1em;
+            text-shadow: 3px 3px 2px rgb(170, 170, 170);
+        }
+
+        p {
+            width: 30%;
+            border: 3px dotted darkkhaki;
+            text-align: justify;
+            display: inline-block;
+            vertical-align: top;
+            text-transform: lowercase;
+            text-indent: 3em;
+            line-height: 1.4;
+            word-spacing: 0.1em;
+            text-shadow: 1px 1px 2px silver;
+            box-shadow: 2px 2px 4px 1.5px rgb(126, 122, 74);
+            /* white-space: nowrap; */
+        }
+
+        .rtl {
+            direction: rtl;
+            unicode-bidi: bidi-override;
+            text-align: left;
+            border-color: khaki;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        div>div {
+            display: inline-block;
+            width: 50%;
+            text-transform: uppercase;
+        }
+
+        span {
+            display: inline-block;
+            width: 50%;
+            vertical-align: middle;
+            text-transform: capitalize;
+        }
+
+        a.link1 {
+            text-decoration: underline overline 1px wavy plum;
+            font-size: 20px;
+            display: block;
+            text-align: center;
+            margin-bottom: 1em;
+        }
+        a.link2 {
+            text-decoration-skip-ink: none;
+            text-decoration: underline overline 1px wavy plum;
+            font-size: 20px;
+            display: block;
+            text-align: center;
+        }
+        .hidden, .ellipsis{
+            display: block;
+            width:50%;
+            height:20px;
+        }
+        .hidden{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: clip;
+        }
+        .ellipsis{
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .hidden:hover, .ellipsis:hover{
+            overflow: visible;
+            width:max-content;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Header1</h1>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos autem incidunt id minus rerum? Itaque
+            eveniet inventore officia accusamus provident neque magni laborum commodi temporibus quam eius sit vel
+            architecto tempora, labore molestias consectetur dolor impedit! Cum, alias exercitationem facilis
+            perspiciatis
+            voluptatem sapiente! Dolore explicabo facere vel! Quasi, fugit ea.</p>
+        <p>
+            เห็นด้วยโลโก้ยอมรับ วีไอพีแจ็กพอตไมค์เรตติ้ง ไลน์อุปนายก ซากุระวานิลาลิมิตแซ็กโซโฟนน็อก
+            ไฟต์เทคก๊วนอาร์ติสต์วิดีโอ นอมินีปิโตรเคมีไฟแนนซ์โชว์รูมอิเหนา ฮิปฮอปแอ็กชั่นนายพราน วิกโบว์บาบูนไฮกุ
+            แจ๊กพอตเซอร์สติ๊กเกอร์แพ็คแฟรนไชส์ แคมป์ซินโดรม ไฟแนนซ์ปิกอัพละอ่อนไนน์ ออโต้อุปัทวเหตุพรีเมียร์สไตรค์มิลค์
+            สปอร์ตธัมโมติ่มซำศิรินทร์ บอมบ์ ออเดอร์รากหญ้าโปรเจกต์เลสเบี้ยน แฟลชโหงวเฮ้งบ๊อบแจ๊กเก็ต
+
+        </p>
+        <p class="rtl">Lorem ipsum dolor sit.</p>
+    </div>
+    <hr>
+    <div>
+        <img src="https://picsum.photos/100/80" alt="picture1">
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, accusamus.
+        </div>
+    </div>
+    <div>
+        <img src="https://picsum.photos/100/80" alt="picture1">
+        <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ratione esse laudantium assumenda tempora
+            at numquam placeat ipsam laboriosam molestias sint soluta, optio totam architecto quaerat voluptatibus
+            impedit! Quasi, modi!
+        </span>
+    </div>
+    <hr>
+    <a class="link1" href="#">Happy birthday</a>
+    <a class="link2" href="#">Happy birthday</a>
+    <hr>
+    <div>
+        <p class="hidden">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui tempora maxime quia esse nihil porro magni culpa neque perferendis saepe.</p>
+        <p class="ellipsis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero saepe dolorem atque deleniti laudantium esse quas et soluta iste distinctio.</p>
+    </div>
+    <hr>
+</body>
+
+</html>

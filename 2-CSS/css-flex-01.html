@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex Lab 01</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: row;
+            flex-flow: nowrap; /*short hand for "flex-direction" and "flex-wrap"*/
+            width: 80vw;
+            height: 80vh;
+            background-color: deeppink;
+            margin:10vh auto;
+        }
+
+        .container > .item2{
+            align-self: center;
+        }
+        .container > *{
+            background-color: lightblue;
+            margin: 5px;
+            padding: 20px;
+            font-size: 30px;
+            line-height: 50px;
+            width: 100px; /*ถ้ามี flex-grow จะทับ width ไปเลย*/
+            /* flex-grow: 1; */
+        }
+        
+        .item2{
+            background-color: red;
+        }
+        
+        .item1{
+            flex-shrink: 0;
+            flex-grow: 2;
+        }
+        
+        .container-2{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            flex-direction: row;
+            flex-flow: nowrap column;
+            width: 80vw;
+            height: 80vh;
+            background-color: rgb(20, 102, 255);
+            margin:10vh auto;
+        }
+        .container-2 > *{
+            background-color: rgb(173, 230, 182);
+            margin: 5px;
+            padding: 20px;
+            font-size: 30px;
+            line-height: 50px;
+            width: 160px;
+            /* flex-shrink: 0; */
+            /*ไม่ยอมให้ตัวไหนขยับ size เดิมตลอด*/
+        }
+
+        .item2-2{
+            order:-1;
+            /* flex-grow: 2; */
+            flex-shrink: 2; /*default = 1*/
+            flex-basis: 30%;
+            /* flex: 0 2 30%; */
+        }
+
+        .item1-2{
+            order: 1;
+            /* flex-grow: 1; */
+            flex-shrink: 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1" style="order:1;">01</div>
+        <div class="item2" style="order:3;">02</div>
+        <div class="item3" style="order:2;">03</div>
+    </div>
+    <div class="container-2">
+        <div class="item1-2">01-2</div>
+        <div class="item2-2">02-2</div>
+        <div class="item3-2">03-2</div>
+    </div>
+</body>
+</html>

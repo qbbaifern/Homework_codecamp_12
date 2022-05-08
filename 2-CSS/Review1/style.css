@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1em;
+}
+h1{
+    color: green;
+    margin: 20px 10px;
+}
+
+table{
+    width:90%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+th{
+    text-align: center;
+    background-color: rgb(1, 83, 1);
+    color: white;
+}
+.mainhead{
+    position: sticky;
+    top: 0;
+}
+th,td{
+    border: 1px solid black;
+}
+tr:hover{
+    background-color: rgba(245, 244, 244, 0.425);
+    font-size: 1.05em;
+}
+
+td:nth-child(1), td:nth-child(2){
+    text-align: center;
+    vertical-align: top;
+    padding: 10px;
+}
+
+td:nth-child(3){
+    font-size: 0.85em;
+}
+
+.insidetable{
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 0.8em;
+}
+
+.insidetable  td:nth-child(3){
+    text-indent: 1em;
+    text-align: left;
+}
+
+.insidetable th{
+    background-color: rgb(197, 197, 197);
+    color: black;
+}
+
+.insidetable td{
+    text-align:center;
+}
+
+.insidetable tr:hover{
+    font-size: 1em;
+}
+#item{
+    width:5%;
+}
+#question{
+    width:30%;
+}
+#answer{
+    width:550%;
+}
+#css_syntax{
+    width:auto;
+    min-width: 150px;
+}
+td > div{
+    margin: 15px 0px;
+}
+ol,ul{
+   margin-left: 30px;
+   /* list-style-position: inside; */
+}
+code{
+    display:inline-block;
+    padding: 15px;
+    border-radius: 0.4em;
+    background-color: rgba(98,98,98,0.3);
+}
+
+#gototop{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 40px;
+}
+#gototop:hover{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 43px;
+    background-color: rgba(86, 202, 86, 0.63);
+    border-radius: 50%;
+}

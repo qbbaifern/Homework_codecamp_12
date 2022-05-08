@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav horizontal</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        ul{
+            list-style-type: none;
+            width:100%;
+            height: 30px;
+            background-color: rgb(238, 200, 173);
+            position: fixed;
+            overflow: hidden;
+            top:0;
+        }
+        li a{
+            width: 65px;
+            padding: 7px;
+            background-color: chocolate;
+            display: block;
+            float: left;
+            text-decoration: none;
+            text-align: center;
+            color: bisque;
+        }
+        ul li:nth-child(2)::after{
+            clear: both;
+            color: red;
+            
+        }
+        ul li:nth-child(2)~li{
+            float: right;
+        }
+        
+        li a:hover{
+            background-color: rgb(124, 58, 11);
+        }
+        li a.active{
+            background-color:olive ;
+        }
+        li a:hover:not(.active){
+            background-color: rgb(124, 58, 11);
+        }
+
+        div[class^=content]{
+            padding: 30px 20px;
+            height: 100vh;
+            width: 100vw;
+        }
+        p{
+            text-indent: 1.8em;
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a class="active" href="#content1">home</a></li>
+        <li><a href="#content2">details</a></li>
+        <li><a href="#content3">location</a></li>
+        <li><a href="#content4">contact</a></li>
+    </ul> 
+    
+    <table>
+        <tr>
+            <td>
+                <div id="content1" class="content1">
+                    <h1>HOME</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur esse exercitationem expedita dicta ipsa possimus hic doloribus ad, alias qui, fugit ea animi architecto recusandae rerum ducimus iusto magni numquam fuga saepe. Iure iste aliquid fuga similique, fugit quae quidem quo magni dignissimos impedit illo iusto necessitatibus, consequatur tenetur. Fuga sequi ad, esse nobis quis asperiores eaque hic velit officia, quos aut reiciendis ipsa fugit explicabo placeat repellat exercitationem quam. Cum dolorum alias unde, sapiente hic qui repudiandae reprehenderit aperiam culpa aliquid vel odio expedita minima! Possimus dolorem corrupti ut inventore, cumque rerum delectus illum modi temporibus impedit quae neque aliquam ratione deleniti architecto. Delectus vel veniam voluptates labore cum, iure at similique, cupiditate illo recusandae ducimus voluptatem aut, corporis quam odit culpa numquam. Reprehenderit, cumque perferendis, odio temporibus suscipit corrupti repellendus expedita dolorum magni iste atque quam enim hic pariatur sed eum officia. Dolores quia tempore voluptatem velit quaerat.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta, ratione sunt pariatur perspiciatis at nostrum voluptatum eaque quis veniam quia laborum quisquam repellendus fugiat? Provident molestias autem dolorum laborum. Aut dolor ducimus praesentium provident. Culpa et nemo minus dolore nesciunt ipsa facere esse sint obcaecati quidem tenetur, rerum eveniet eligendi qui quisquam id quos voluptate, molestias expedita. Velit quisquam provident deserunt fugiat voluptates rem corrupti ad explicabo omnis ducimus! Esse dolorum cum alias voluptate quidem. Quisquam ducimus veniam distinctio, animi obcaecati, eveniet expedita quibusdam reprehenderit explicabo sed ratione itaque sequi at illum ipsum! Est adipisci animi optio, repellendus, soluta laudantium accusamus distinctio atque sapiente expedita fugit deleniti molestias quae rem maiores laborum aliquam omnis a, quos voluptatum modi! Harum vero itaque deleniti optio quos. Accusantium, facilis! Architecto cum, sint asperiores facilis dolorem maiores quae quo, labore, alias et quidem. Reprehenderit inventore aspernatur qui ipsam ipsum tempora laborum fuga nisi dolorum, dolor blanditiis, quasi harum voluptate. Alias, ab incidunt assumenda eius aliquam, deleniti magnam, quasi iure ratione rerum debitis officiis. Sequi nihil vel dolore a, reiciendis adipisci ex harum eligendi at iusto ad esse! Molestiae id aliquid eligendi ratione dolore. Laudantium nostrum fugit libero repudiandae omnis, inventore fuga! Fugiat non laudantium repudiandae quaerat, ab facilis maiores voluptatibus eos quidem sint aspernatur, cupiditate rerum doloremque, molestias porro distinctio quas ullam. Voluptate vel dolorem blanditiis ex veritatis est corrupti quod ipsam illum. Magnam perspiciatis laborum rerum distinctio doloremque sunt quo consequatur consectetur ipsam beatae facilis, atque accusantium. Voluptates modi a quod quos ad quis delectus quisquam minus earum molestiae. Nobis deserunt ad exercitationem consequatur, ipsum quibusdam suscipit sit quisquam eaque a eos quae ipsa, perspiciatis nihil accusamus maiores. Aliquid sapiente laboriosam nostrum ipsam officiis omnis non pariatur alias doloribus dolorum, reprehenderit ipsa commodi mollitia, dicta quidem quo, repudiandae blanditiis. Quam molestiae itaque aliquid quibusdam hic. Iste sed, tempora pariatur laudantium, vel quae alias, deleniti excepturi rem autem earum dolorem recusandae fuga! Error libero eius expedita nihil dignissimos, ipsam nesciunt aliquam magni eaque labore eos autem alias, sequi illo illum. In sapiente aliquid a molestias dolor quos tempora ad, voluptate amet soluta modi aut.</p>
+                </div>
+            </td>
+            <td>
+                <div id="content2" class="content2">
+                    <h1>DETAILS</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem pariatur laudantium sint illum inventore. Quo, ad at eaque eius soluta commodi ipsam amet in ea atque praesentium nam! Labore eligendi voluptas, repellendus nulla ut eos accusantium, voluptate consequatur provident, quibusdam odio. Modi asperiores deleniti laboriosam beatae culpa neque, reprehenderit quaerat voluptates nobis alias accusantium ut est quisquam? Illum impedit voluptatem tempora perspiciatis sequi dolores officiis consequatur dolore placeat alias, quae magnam a ab sit? Nobis quas ad natus a quam sint corporis ab, possimus fugiat quia amet harum minus nesciunt deleniti modi, officiis accusamus accusantium eveniet hic reprehenderit quo in.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit at enim rem eum repellendus maiores eligendi ab natus? Repudiandae, totam? Dolorem voluptate itaque quo et fuga ipsa dolores? Adipisci, earum!</p>
+                </div>
+            </td>
+            <td>
+                <div id="content3" class="content3">
+                    <h1>LOCATION</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita repudiandae est deserunt doloribus, ea minima quia! Dolorum laudantium rerum beatae rem, ea deleniti, temporibus incidunt veniam repudiandae numquam error dolorem! Ex laborum animi voluptate debitis saepe nihil, id soluta aliquid.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis perspiciatis, sunt blanditiis dolores dicta libero.</p>
+                </div>
+            </td>
+            <td>
+                <div id="content4" class="content4">
+                    <h1>CONTACT</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita repudiandae est deserunt doloribus, ea minima quia! Dolorum laudantium rerum beatae rem, ea deleniti, temporibus incidunt veniam repudiandae numquam error dolorem! Ex laborum animi voluptate debitis saepe nihil, id soluta aliquid.</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit at enim rem eum repellendus maiores eligendi ab natus? Repudiandae, totam? Dolorem voluptate itaque quo et fuga ipsa dolores? Adipisci, earum!</p>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+    
+</body>
+</html>

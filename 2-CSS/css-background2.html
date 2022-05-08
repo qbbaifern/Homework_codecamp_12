@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css background lab 2</title>
+    <style>
+        div[class^=box]{
+            display:inline-block;
+            width: 200px;
+            height: 200px;
+            background-color: hotpink;
+            background-image: url("https://picsum.photos/id/990/600");
+            transition: transform 1s;
+        }
+        
+        div[class^=box]:hover{
+            transform: rotate(20deg);
+        }
+        .row2 > .box2{
+            transform: scale(1.1);
+            border: 1px solid black ;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <img src="https://picsum.photos/id/990/200" alt="">
+    <div class="row1">
+        <div class="box1" style="background-position: top left;"></div>
+        <div class="box2" style="background-position: top center;"></div>
+        <div class="box3" style="background-position: top right;"></div>       
+    </div>
+    <div class="row2">
+        <div class="box1" style="background-position: center left;"></div>
+        <div class="box2" style="background-position: center center;"></div>
+        <div class="box3" style="background-position: center right;"></div>       
+    </div>
+    <div class="row3">
+        <div class="box1" style="background-position: bottom left;"></div>
+        <div class="box2" style="background-position: bottom center;"></div>
+        <div class="box3" style="background-position: bottom right;"></div>       
+    </div>
+    
+</body>
+</html>

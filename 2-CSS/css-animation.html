@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css animation</title>
+    <style>
+        div:nth-child(1){
+            width: 50px;
+            height: 50px;
+            background-color: bisque;
+            transition: width 1s, height 1s, background-color 2s;
+            overflow: hidden;
+            text-align: justify;
+        }
+        div:nth-child(1):hover{
+            width: 300px;
+            height: 300px;
+            background-color: palevioletred;
+        }
+        div:nth-child(2){
+            width: 50px;
+            height: 50px;
+            background-color: bisque;
+            transition: 1s;
+            overflow: hidden;
+            text-align: justify;
+            animation-name: walk;
+            animation-duration: 4s;
+            position: relative;
+            animation-timing-function: ease-in;
+        }
+        @keyframes walk{
+            0%{background-color: rgb(250, 213, 167); left:0; top:0;}
+            25%{background-color: rgb(233, 166, 85); left: 150px;top:0;}
+            50%{background-color: rgb(201, 134, 53); left:150px; top: 150px;}
+            75%{background-color: rgb(139, 84, 15); left: 50px;top: 150px;}
+            100%{background-color: rgb(77, 42, 0); left: 50px;top: 0;}
+        }
+    </style>
+</head>
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa voluptates accusantium cupiditate quidem veritatis earum ratione sed natus eos aspernatur numquam, omnis ut, asperiores necessitatibus aut placeat quo magnam animi fugiat assumenda fugit vero modi. Fuga beatae voluptas, veniam aut praesentium a vero ad deleniti amet nam ullam pariatur at.</div>
+    <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga, autem veniam ullam at harum modi. Eveniet quae ducimus doloribus sit reprehenderit voluptates quos reiciendis repellat adipisci, dolorum magnam tempore incidunt!</div>
+</body>
+</html>

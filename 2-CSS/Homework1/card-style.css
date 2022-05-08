@@ -1,0 +1,18 @@
+*{
+    box-sizing: border-box;
+}
+.card{
+    display: inline-block;
+    background-color: lightblue;
+    box-shadow: 4px 8px 8px silver;
+    border-radius: 5px;
+    text-align: center;
+    margin: 5px;
+    width: max-content;
+}
+img{
+    border-radius: 5px 5px 0 0;
+}
+.container{
+    width: 100%;
+}

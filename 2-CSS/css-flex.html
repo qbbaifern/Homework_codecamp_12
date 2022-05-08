@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css-flex</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* Don't use flex */
+        .container1 {
+            height: 100px;
+            outline: 1px red solid;
+            margin: 10px 10px;
+            position: relative;
+        }
+
+        .container1 .box {
+            height: 100px;
+            width: 100px;
+            border: 1px green dashed;
+            position: absolute;
+        }
+
+        .container1 .logo {
+            left: 0;
+        }
+
+        .container1 .title {
+            right: 50%;
+            transform: translate(50%, 0);
+        }
+
+        .container1 .link {
+            right: 0;
+        }
+        /* Use flex */
+        .container2 .box{
+            border: 1px green solid;
+            width: 100px;
+            height: 100px;
+        }
+        .container2{
+            margin: 10px 10px;
+            display: flex;
+            justify-content: space-between;
+            outline: 1px red solid;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <!-- Don't use flex -->
+    <p>Don't use flex</p>
+    <div class="container1">
+        <div class="box logo"></div>
+        <div class="box title"></div>
+        <div class="box link"></div>
+    </div>
+    <!-- use flex -->
+    <p>Use flex</p>
+    <div class="container2">
+        <div class="box logo"></div>
+        <div class="box title"></div>
+        <div class="box link"></div>
+    </div>
+</body>
+
+</html>

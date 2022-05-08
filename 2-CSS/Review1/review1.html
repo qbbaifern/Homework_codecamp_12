@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 id="TOP">CSS Review1</h1>
+    <colgroup>
+        <col span="1" id="item">
+        <col span="1" id="question">
+        <col span="1" id="answer">
+    </colgroup>
+    <table>
+        <tr class="mainhead">
+            <th>Item</th>
+            <th>Question</th>
+            <th>Answer</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>CSS syntax ประกอบด้วยอะไรบ้าง</td>
+            <td>
+                <img id="css_syntax" src="https://www.w3schools.com/css/img_selector.gif" alt="CSS syntax"> <br>
+                <div>
+                    CSS syntax ประกอบด้วย ... <br>
+                    <ol>
+                        <li>Selector</li>
+                        <ul>
+                            <li>เป็นตัวชี้ไปที่ HTML elements ที่เราต้องการกำหนด style</li>
+                        </ul>
+                        <li>Declaration block</li>
+                        <ul>
+                            <li>จะประกอบด้วยชุดคำสั่ง(มากกว่า 1 คำสั่งก็ได้) ที่ต้องจบหรือคั่นระหว่างคำสั่งด้วย
+                                semi-colon (;) </li>
+                            <li>แต่ละชุดคำสั่งประกอบด้วย Property name และ Value และมี semi-colon (;) คั่น</li>
+                            <li>ชุดคำสั่งทั้งหมดจะถูกครอบด้วย curly braces ({ })</li>
+                        </ul>
+                        <li>Property</li>
+                        <ul>
+                            <li>ชื่อของคำสั่งที่ต้องการจัดการ</li>
+                        </ul>
+                        <li>value</li>
+                        <ul>
+                            <li>ค่าของคำสั่งที่ต้องการ</li>
+                        </ul>
+                    </ol>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>การเขียน CSS มีกี่แบบอะไรบ้าง</td>
+            <td>
+                <div>
+                    การเขียน CSS สามารถทำได้ 3 แบบ คือ ...
+                    <ol>
+                        <li>Inline CSS</li>
+                        <ul>
+                            <li>กำหนด CSS style ภายใน HTML tag <br>
+                                <ins>EX:</ins> <br>
+                                <code>
+                                    &lt;p <mark>style="color: red;"</mark>&gt;
+                                </code>
+                            </li>
+                        </ul>
+                        <li>Internal CSS</li>
+                        <ul>
+                            <li>กำหนด CSS style ใน head tag <br>
+                                <ins>EX:</ins> <br>
+                                <code>
+                                    &lt;head&gt;
+                                    <br>
+                                    <mark>
+                                        &lt;style&gt; <br>
+                                        &lt;p style="color: red;"&gt;
+                                        <br>
+                                        &lt;/style&gt;
+                                    </mark>
+                                    <br>
+                                    &lt;/head&gt;
+                                </code>
+                            </li>
+                        </ul>
+                        <li>External CSS</li>
+                        <ul>
+                            <li>กำหนด CSS style ใน file .css </li>
+                            <li>ที่ file .html จำต้องมีการเรียกใช้ file .css<br>
+                                <ins>EX:</ins> สร้าง file ชื่อ "style.css" เพื่อใช้เขียน CSS<br>
+                                <ul>
+                                    <li> เรียกใช้ file .css ที่ head tag ของ file .html <br>
+                                        <code>
+                                            &lt;head&gt;
+                                            <br>
+                                            <mark>
+                                                &lt;link rel="stylesheet" href="style.css"&gt;
+                                            </mark>
+                                            <br>
+                                            &lt;/head&gt;
+                                        </code>
+                                    </li>
+                                    <li>
+                                        กำหนด style ที่ element ที่ต้องการ ใน file .css ตาม syntax <br>
+                                        <code>
+                                            <mark>
+                                            p{ <br>
+                                                &nbsp;&nbsp;&nbsp;color:red; <br>
+                                            }
+                                        </mark>
+                                    </code>
+                                    </li>
+                            </li>
+                        </ul>
+                        </ul>
+                    </ol>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>selector มีกี่แบบอะไรบ้าง</td>
+            <td>
+                <div>
+                    Selector ใน CSS มี 5 ประเภท ได้แก่
+                    <ol>
+                        <li>Simple selectors(ใช้เลือก elements ตาม name, id, class)</li>
+                        <ul>
+                            <li>สรุปตามตารางด้านล่าง
+                                <table class="insidetable">
+                                    <tr>
+                                        <th>Selector</th>
+                                        <th>Example</th>
+                                        <th>Example description</th>
+                                    </tr>
+                                    <tr>
+                                        <td>#id</td>
+                                        <td>#firstname</td>
+                                        <td>Selects the element with id="firstname"</td>
+                                    </tr>
+                                    <tr>
+                                        <td>.class</td>
+                                        <td>.intro</td>
+                                        <td>Selects all elements with class="intro"</td>
+                                    </tr>
+                                    <tr>
+                                        <td>element.class </td>
+                                        <td>p.intro</td>
+                                        <td>Selects only <p> elements with class="intro"</td>
+                                    </tr>
+                                    <tr>
+                                        <td>*</td>
+                                        <td>*</td>
+                                        <td>Selects all elements</td>
+                                    </tr>
+                                    <tr>
+                                        <td>element</td>
+                                        <td>p</td>
+                                        <td>Selects all <p> elements</td>
+                                    </tr>
+                                    <tr>
+                                        <td>element,element,..</td>
+                                        <td>div, p</td>
+                                        <td>Selects all &lt;div&gt; elements and all &lt;p&gt; elements</td>
+                                    </tr>
+                                </table>
+                            </li>
+                        </ul>
+                        <li>Combinator selectors (ใช้เลือก elements ที่มีความสัมพันธ์กัน) มี 4 ประเภท... <br>
+                            <ul>
+                                <li>descendant selector (space)</li>
+                                <li>child selector (>)</li>
+                                <li>adjacent sibling selector (+)</li>
+                                <li>general sibling selector (~)</li>
+                            </ul>
+                        </li>
+                        <li>Pseudo-class selectors (ใช้เลือก elements ที่ต้องการกำหนด state เพิ่ม) <br>
+                        <ul>
+                            <li><ins>Syntax:</ins> <br>
+                            <code>
+                                <pre>
+selector:pseudo-class {
+    property: value;
+}</pre>
+                            </code></li>
+                            <li><ins>EX:</ins> <br>
+                                <code>
+                                    <pre>
+<mark>a:hover</mark> {
+    color: red;
+}</pre>
+                                </code></li>
+                        </ul>
+                        </li>
+                        <li>Pseudo-elements selectors (ใช้เลือกและกำหนด stlye ในบางส่วนของ element หรือ content) <br>
+                            <ul>
+                                <li><ins>Syntax:</ins> <br>
+                                <code>
+                                    <pre>
+selector::pseudo-element {
+    property: value;
+}</pre>
+                                </code></li>
+                                <li><ins>EX:</ins> <br>
+                                    <code>
+                                        <pre>
+<mark>p::first-line</mark> {
+    color: red;
+    font-variant: small-caps;
+}</pre>
+                                    </code></li>
+                                    <li> สรุปตามตารางด้านล่าง
+                                        <table class="insidetable">
+                                            <tr>
+                                                <th>Selector</th>
+                                                <th>Example</th>
+                                                <th>Example description</th>
+                                            </tr>
+                                            <tr>
+                                                <td>::after</td>
+                                                <td>p::after</td>
+                                                <td>Insert something after the content of each <p> element</td>
+                                            </tr>
+                                            <tr>
+                                                <td>::before</td>
+                                                <td>p::before</td>
+                                                <td>Insert something before the content of each <p> element</td>
+                                            </tr>
+                                            <tr>
+                                                <td>::first-letter</td>
+                                                <td>p::first-letter</td>
+                                                <td>Selects the first letter of each <p> element</td>
+                                            </tr>
+                                            <tr>
+                                                <td>::first-line</td>
+                                                <td>p::first-line</td>
+                                                <td>Selects the first line of each <p> element</td>
+                                            </tr>
+                                            <tr>
+                                                <td>::marker</td>
+                                                <td>::marker</td>
+                                                <td>Selects the markers of list items</td>
+                                            </tr>
+                                                <td>::selection</td>
+                                                <td>p::selection</td>
+                                                <td>Selects the portion of an element that is selected by a user</td>
+                                            </tr>
+                                        </table>
+                                    </li>
+                            </ul>
+                        </li>
+                        <li>Attribute selectors (ใช้เลือก elements โดยชี้ไปที่ attribute หรือ attribute value) <br> 
+                            <ul>
+                                <li><ins>EX:</ins> <br>
+                                <code>
+                                    <pre>
+<mark>a[target]</mark>{
+    background-color: yellow;
+}</pre>
+                                </code></li>
+                                <li>สรุปตามตารางด้านล่าง
+                                    <table class="insidetable">
+                                        <tr>
+                                            <th>Selector</th>
+                                            <th>Example</th>
+                                            <th>Example description</th>
+                                        </tr>
+                                        <tr>
+                                            <td>[attribute]</td>
+                                            <td>[target]</td>
+                                            <td>Selects all elements with a target attribute</td>
+                                        </tr>
+                                        <tr>
+                                            <td>[attribute=value]</td>
+                                            <td>[target=_blank]</td>
+                                            <td>Selects all elements with target="_blank"</td>
+                                        </tr>
+                                        <tr>
+                                            <td>[attribute~=value]</td>
+                                            <td>[title~=flower]</td>
+                                            <td>Selects all elements with a title attribute containing the word "flower"</td>
+                                        </tr>
+                                        <tr>
+                                            <td>[attribute|=value]</td>
+                                            <td>[lang|=en]</td>
+                                            <td>Selects all elements with a lang attribute value starting with "en"</td>
+                                        </tr>
+                                        <tr>
+                                            <td>[attribute^=value]</td>
+                                            <td>a[href^="https"]</td>
+                                            <td>Selects every <a> element whose href attribute value begins with "https"</td>
+                                        </tr>
+                                        <tr>
+                                            <td>[attribute$=value]</td>
+                                            <td>a[href$=".pdf"]</td>
+                                            <td>Selects every <a> element whose href attribute value ends with ".pdf"</td>
+                                        </tr>
+                                        <tr>
+                                            <td>[attribute*=value]</td>
+                                            <td>a[href*="w3schools"]</td>
+                                            <td>Selects every <a> element whose href attribute value contains the substring "w3schools"</td>
+                                        </tr>
+                                    </table>
+                                </li>
+                                </ul>
+                        </li>
+                        
+                    </ol>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>combinator มีกี่แบบอะไรบ้าง</td>
+            <td><div>Combinators มี 4 แบบ ดังนี้ <br>
+                <ol>
+                    <li>descendant selector (space): ชี้ไปที่ element ที่เป็นส่วนสืบทอดจาก element หลักทั้งหมด<br>
+                        ส่วน css: <br>
+                        <code>
+                        <mark>div p</mark> { <br>
+                            background-color: yellow; <br>
+                          }
+                    </code> <br>
+                        ส่วน html (จะแสดงผลที่บรรทัด highlight): <br>
+                        <code>
+                        <pre>
+&lt;p&gt;parahraph&lt;/p&gt;
+&lt;div&gt; 
+    <mark>&lt;p&gt;parahraph&lt;/p&gt;</mark>
+    &lt;section&gt;
+        <mark>&lt;p&gt;parahraph&lt;/p&gt;</mark>
+    &lt;/section&gt;
+&lt;/div&gt;</pre>
+                    </code>
+                    </li>
+                    <li>child selector (>): ชี้ไปที่ element ที่เป็นส่วนสืบทอดจาก element โดยตรง <br>   
+                        ส่วน css: <br>
+                        <code>
+                        <mark>div &gt; p</mark> { <br>
+                            background-color: yellow; <br>
+                          }
+                    </code> <br>
+                        ส่วน html (จะแสดงผลที่บรรทัด highlight): <br>
+                        <code>
+                        <pre>
+&lt;p&gt;parahraph&lt;/p&gt;
+&lt;div&gt; 
+    <mark>&lt;p&gt;parahraph&lt;/p&gt;</mark>
+    &lt;section&gt;
+        &lt;p&gt;parahraph&lt;/p&gt;
+    &lt;/section&gt;
+&lt;/div&gt;</pre>
+                    </code>
+                    </li>
+                    <li>adjacent sibling selector (+): ชี้ไปที่ element ถัดจาก element ที่สนใจ 1 element <br>
+                        ส่วน css: <br>
+                        <code>
+                        <mark>div + p</mark> { <br>
+                            background-color: yellow; <br>
+                          }
+                    </code> <br>
+                        ส่วน html (จะแสดงผลที่บรรทัด highlight): <br>
+                        <code>
+                        <pre>
+&lt;p&gt;parahraph&lt;/p&gt;
+&lt;div&gt; 
+    &lt;p&gt;parahraph&lt;/p&gt;
+&lt;/div&gt;
+<mark>&lt;p&gt;parahraph&lt;/p&gt;</mark>
+&lt;p&gt;parahraph&lt;/p&gt;
+&lt;div&gt; 
+    &lt;p&gt;parahraph&lt;/p&gt;
+&lt;/div&gt;
+<mark>&lt;p&gt;parahraph&lt;/p&gt;</mark> </pre>
+                    </code>
+                    </li>
+                    <li>general sibling selector (~): ชี้ไปที่ element ถัดจาก element ที่สนใจ ทุกๆ element <br>
+                        ส่วน css: <br>
+                        <code>
+                        <mark>div ~ p</mark> { <br>
+                            background-color: yellow; <br>
+                          }
+                    </code> <br>
+                        ส่วน html (จะแสดงผลที่บรรทัด highlight): <br>
+                        <code>
+                        <pre>
+&lt;p&gt;parahraph&lt;/p&gt;
+&lt;div&gt; 
+    &lt;p&gt;parahraph&lt;/p&gt;
+&lt;/div&gt;
+<mark>&lt;p&gt;parahraph&lt;/p&gt;</mark>
+<mark>&lt;p&gt;parahraph&lt;/p&gt;</mark>
+&lt;code&gt;parahraph&lt;/code&gt;
+<mark>&lt;p&gt;parahraph&lt;/p&gt;</mark> </pre>
+                    </code>
+                    </li>
+                </ol>
+            </div></td>
+        </tr>
+    </table>
+    <br>
+    <p><em>Reference: <br>
+            <a href="https://www.w3schools.com/css/css_syntax.asp">https://www.w3schools.com/css/css_syntax.asp</a></em> <br>
+            <a href="https://www.w3schools.com/css/css_selectors.asp">https://www.w3schools.com/css/css_syntax.asp</a></em> 
+    </p>
+    <div>
+        <a href="#TOP"><img id="gototop" src="image/go_to_top.png" alt="go to top"></a>
+    </div>
+</body>
+
+</html>

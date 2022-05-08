@@ -1,0 +1,11 @@
+### CODE_CAMP12
+- Pakaporn Sukprasitpreedee
+- Review1
+    - CSS syntax ประกอบด้วยอะไรบ้าง
+    - การเขียน CSS มีกี่แบบอะไรบ้าง
+    - selector มีกี่แบบอะไรบ้าง
+    - combinator มีกี่แบบอะไรบ้าง
+    - ให้สร้าง page review CSS
+    - ใช้ table ในการตอบโจทย์แต่ละข้อ
+    - ขนาดฟอนด์หัวข้อต้องใหญ่กว่า ข้อมูล
+- ไฟล์งาน: [https://github.com/qbbaifern/Homework_codecamp_12/tree/main/2-CSS/Review1](https://github.com/qbbaifern/Homework_codecamp_12/tree/main/2-CSS/Review1)

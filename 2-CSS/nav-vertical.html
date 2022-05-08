@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav vertical</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        ul{
+            list-style-type: none;
+            width: 25%;
+            height: 100%;
+            background-color: antiquewhite;
+            position:fixed;
+            overflow: auto;
+        }
+        
+        li a{
+            display: block;
+            padding: 10px;
+            background-color: palevioletred;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-align: center;
+            color:white;
+            font-size: 12px;
+        }
+        li a:hover{
+            background-color: rgb(224, 92, 136);
+        }
+        li a:active{
+            background-color: seagreen;
+        }
+        
+        li a.active{
+            background-color: seagreen;
+        }
+        li a:hover:not(.active){
+            background-color: rgb(224, 92, 136);
+        }
+        
+        div[class^=content]{
+            margin-left: 25%;
+            padding-left: 3%;
+            height: 100vh;
+            background-color: wheat;
+        }
+
+        
+        </style>
+
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="#content1">home</a></li>
+        <li><a href="#content2">details</a></li>
+        <li><a href="#content3">location</a></li>
+        <li><a href="#content4">contact</a></li>
+    </ul>
+    <div id="content1" class="content1">
+        <h1>HOME</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae optio tempore quod quidem explicabo error iure, hic, corporis, dolorum recusandae at ab perferendis voluptatum culpa ad assumenda sunt doloremque quis?</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit at enim rem eum repellendus maiores eligendi ab natus? Repudiandae, totam? Dolorem voluptate itaque quo et fuga ipsa dolores? Adipisci, earum!</p>
+    </div>
+    <div id="content2" class="content2">
+        <h1>DETAILS</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita repudiandae est deserunt doloribus, ea minima quia! Dolorum laudantium rerum beatae rem, ea deleniti, temporibus incidunt veniam repudiandae numquam error dolorem! Ex laborum animi voluptate debitis saepe nihil, id soluta aliquid.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit at enim rem eum repellendus maiores eligendi ab natus? Repudiandae, totam? Dolorem voluptate itaque quo et fuga ipsa dolores? Adipisci, earum!</p>
+    </div>
+    <div id="content3" class="content3">
+        <h1>LOCATION</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita repudiandae est deserunt doloribus, ea minima quia! Dolorum laudantium rerum beatae rem, ea deleniti, temporibus incidunt veniam repudiandae numquam error dolorem! Ex laborum animi voluptate debitis saepe nihil, id soluta aliquid.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis perspiciatis, sunt blanditiis dolores dicta libero.</p>
+    </div>
+    <div id="content4" class="content4">
+        <h1>CONTACT</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita repudiandae est deserunt doloribus, ea minima quia! Dolorum laudantium rerum beatae rem, ea deleniti, temporibus incidunt veniam repudiandae numquam error dolorem! Ex laborum animi voluptate debitis saepe nihil, id soluta aliquid.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit at enim rem eum repellendus maiores eligendi ab natus? Repudiandae, totam? Dolorem voluptate itaque quo et fuga ipsa dolores? Adipisci, earum!</p>
+    </div>
+</body>
+</html>

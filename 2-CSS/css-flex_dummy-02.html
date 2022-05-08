@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flex Lab 02</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        html{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        body{
+            max-width: 1000px;
+            margin: auto;
+        }
+        header{
+            background-color: rgba(7, 187, 219, 0.3);
+            height: 10vh;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+        }
+        main{
+            height: 80vh;
+            display: flex;
+            flex-flow: wrap;
+            background-image: linear-gradient(rgba(155,20,30,0.2),rgba(255, 193, 136, 0.2)), url(https://picsum.photos/id/740/2000/1500);
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+
+        main > *{
+            outline: dashed red 1px;
+            margin: 0;
+            justify-content: flex-start;
+            flex:1;
+        }
+
+        .aside1, .aside2{
+            background-color: rgba(126, 124, 248, 0.5);
+            flex-basis: 100px;
+        }
+
+        
+        .content{
+            flex: 4 500px;
+            flex-shrink: 0;
+            text-align: center;
+            display: flex;
+            justify-content: flex-start;
+            flex-flow: column;
+        }
+        
+        .content > *{
+            align-items: center;
+        }
+        footer{
+            background-color: rgba(7, 187, 219, 0.3);
+            height: 10vh;
+        }
+
+        .navigation{
+            display: flex;
+            list-style: none;
+            margin: 0;
+            background-color: rgb(98, 98, 145);
+        }
+       
+        li a{
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 0.5em;
+        }
+        li a:hover{
+            background-color: rgb(158, 161, 182)
+        }
+        
+        @media (max-width: 700px){
+            header{
+                justify-content: center;
+            }
+            .navigation{
+                width: 100%;
+                justify-content: space-around;
+            }
+        }
+        @media (max-width: 600px){
+            header{
+                height: auto;
+                text-align: center;
+            }
+            .navigation{
+                flex-flow: column;
+                justify-content: flex-start;
+            }
+            .navigation li{
+                border-bottom: solid gray;
+            }
+        }
+
+        </style>
+</head>
+<body>
+    <header class="header">
+        <ul class="navigation">
+            <li><a href="#home">home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#products">products</a></li>
+            <li><a href="#conact">conact</a></li>
+        </ul>
+    </header>
+    <main class="main">
+        <div class="aside1">
+            <h2>News</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus earum sunt odio neque aperiam? Labore illo alias quaerat aspernatur necessitatibus.</p>
+        </div>
+        <div class="content">
+            <h1>title</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et exercitationem ad itaque tenetur voluptatum est magni neque dolores facilis fugiat libero iusto explicabo consectetur omnis totam quas quae quo voluptatibus nesciunt ullam, commodi quasi. Ipsum, minima odio at delectus distinctio, autem repellat laudantium exercitationem, architecto ad earum impedit sequi sed!</p>
+            <div style="margin: 60px 20px 0 60px;">
+                <h3 style="text-align: left;">title</h3>
+                <p style="text-align: left;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et exercitationem ad itaque tenetur voluptatum est magni neque dolores facilis fugiat libero iusto explicabo consectetur omnis totam quas quae quo voluptatibus nesciunt ullam, commodi quasi. Ipsum, minima odio at delectus distinctio, autem repellat laudantium exercitationem, architecto ad earum impedit sequi sed!</p>
+            </div>
+        </div>
+        <div class="aside2">
+            <h2>News</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus earum sunt odio neque aperiam? Labore illo alias quaerat aspernatur necessitatibus.</p>
+        </div>
+    </main>
+    <footer class="footer">Footer</footer>
+</body>
+</html>
