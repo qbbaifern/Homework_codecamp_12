@@ -1,9 +1,6 @@
 Add comment
 Line1
 Line2
-<<<<<<< HEAD
 Line3
-=======
 Line3
 Line4
->>>>>>> GIT-Lab5
