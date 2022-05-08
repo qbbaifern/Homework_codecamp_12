@@ -1,5 +1,9 @@
+conflict
+line 1
+line 2
+line 3
 Conflict
 *****Make conflict
 *****Make conflict
 *****Make conflict
-*****No conflict
+*****No conflict******
